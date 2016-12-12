@@ -3,8 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Nilo Alexandre Pereira'
-SITENAME = 'Meu Blog'
+SITENAME = "N1lux's blog"
 SITEURL = ''
+SITETITLE = SITENAME
+
+SITELOGO = 'https://avatars1.githubusercontent.com/u/8444311?v=3&u=703fede9c11b55cf61f843de53945a2d7e68034e&s=400'
+SITESUBTITLE = 'Sotfware Engineer - Python/Django'
 
 PATH = 'content'
 
@@ -20,17 +24,28 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('about', '/about.html'),
+         ('contact', '/contact.html'),
+         ('portifolio', '/portifolio.html'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('linkedin', 'https://br.linkedin.com/in/n1lux/en'),
+          ('github', 'https://github.com/n1lux'),
+          ('google', 'https://google.com/+NiloAlexandrePereira/'),
+          ('twitter', 'https://twitter.com/n1lux'),)
 
+COPYRIGHT_YEAR = 2016
 THEME = 'Flex'
 DEFAULT_PAGINATION = 10
+
+MAIN_MENU = True
+
+MENUITEMS = (('Archives', '/archives.html'),
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
+
+
+
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
